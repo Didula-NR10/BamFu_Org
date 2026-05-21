@@ -1,0 +1,53 @@
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  outline: none;
+}
+
+/* Primary Orange Button (Used for "Contact Us") */
+.btn-primary-orange {
+  background-color: #ff7300;
+  color: #ffffff;
+}
+
+.btn-primary-orange:hover {
+  background-color: #e06500;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 115, 0, 0.2);
+}
+
+.btn-primary-orange:active {
+  background-color: #cc5c00;
+  transform: translateY(0);
+}
+
+/* Secondary Outline Button */
+.btn-outline-green {
+  background-color: transparent;
+  border-color: #1b5e20;
+  color: #1b5e20;
+}
+
+.btn-outline-green:hover {
+  background-color: #1b5e20;
+  color: #ffffff;
+}
+
+/* Disabled State */
+.ui-button:disabled {
+  background-color: #cccccc;
+  color: #888888;
+  border-color: transparent;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}

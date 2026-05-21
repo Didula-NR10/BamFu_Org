@@ -1,0 +1,93 @@
+.hero-section {
+  padding: 2rem;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-green-panel {
+  background-color: #2b6e46; /* Matching deep green template backdrop */
+  border-radius: 24px;
+  min-height: 85vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating Status Badge in Top-Right */
+.hero-status-badge {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.75rem 1.2rem;
+  border-radius: 12px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  pointer-events: none;
+}
+
+.status-time {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.status-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+/* Image-Masked Text Treatment */
+.hero-mask-container {
+  width: 100%;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-masked-text {
+  font-size: clamp(5rem, 18vw, 15rem); /* Scalable typographic design */
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: -2px;
+  line-height: 1;
+  
+  /* Text Mask Logic */
+  background-image: url('/src/assets/panda-bamboo-mask.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Standard clip attributes to lock image inside text paths */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .hero-green-panel {
+    min-height: 60vh;
+  }
+  
+  .hero-status-badge {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 0.85rem;
+  }
+  
+  .status-time {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,80 @@
+.service-card {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: #ff7300;
+  box-shadow: 0 8px 25px rgba(255, 115, 0, 0.08);
+}
+
+.service-card-header {
+  margin-bottom: 1.5rem;
+}
+
+.service-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ff7300;
+  margin: 0 0 1rem 0;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.service-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  flex-grow: 1;
+}
+
+.service-feature-item {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bullet-point {
+  color: #111111;
+  font-size: 1.2rem;
+}
+
+.service-decorator {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.quote-mark {
+  font-family: Georgia, serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #ff7300;
+  display: block;
+  transform: translateY(1.5rem);
+  opacity: 0.9;
+}
